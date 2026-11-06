@@ -3,58 +3,46 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>YoruLock プライバシーポリシー</title>
-<style>
-  :root { --bg: #fbfaf7; --fg: #1d1c1a; --sub: #6b6862; --line: #e4e1da; }
-  @media (prefers-color-scheme: dark) { :root { --bg: #141312; --fg: #ece9e3; --sub: #a29e96; --line: #2c2a27; } }
-  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.8 -apple-system, "Hiragino Sans", sans-serif; }
-  main { max-width: 680px; margin: 0 auto; padding: 40px 16px 64px; }
-  h1 { font-size: 24px; margin: 0 0 4px; }
-  h2 { font-size: 17px; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
-  .sub { color: var(--sub); font-size: 14px; }
-  a { color: inherit; }
-</style>
+<title>YoruLock | プライバシーポリシー</title>
+<meta name="theme-color" content="#0a0e1c">
+<link rel="icon" href="assets/icon.webp">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-<h1>プライバシーポリシー</h1>
-<p class="sub">YoruLock（iOS アプリ）／最終更新 2026年10月29日</p>
-
-<p>YoruLock は、あなたの情報を集めません。開発者のサーバーはなく、アプリは外部と通信しません。
-広告、解析ツール、トラッキングは使っていません。</p>
-
-<h2>端末の中だけに保存するもの</h2>
-<p>次の情報は、アプリが動くためにあなたの iPhone の中だけに保存します。開発者を含め、誰にも送られません。
-アプリを削除すると消えます（購入の記録の一部は、再インストール後も料金を正しく出すためにキーチェーンに残ります）。</p>
-<ul>
-  <li>ロックする時間、厳しさ、朝のチェックインや起床のアラームの設定</li>
-  <li>ロックや一時解除、チェックインの記録（ふりかえり画面に使います）</li>
-  <li>朝の課題に登録したバーコードの値</li>
-</ul>
-
-<h2>スクリーンタイム（Family Controls）</h2>
-<p>ロックするアプリの選択と、ふりかえりの利用時間は、Apple のスクリーンタイムの仕組みで扱います。
-どのアプリを選んだかや利用時間は、Apple の仕組み上、アプリの外に出せない形で端末の中に留まります。</p>
-
-<h2>カメラとモーション</h2>
-<p>カメラは、朝の課題でバーコードを読み取るときだけ使います。写真は保存も送信もしません。
-モーション（歩数）は、朝の課題で歩いたかを確かめるときだけ、端末の中で読みます。</p>
-
-<h2>購入</h2>
-<p>一時解除やアラームを止める購入は、Apple の App Store が処理します。支払いの情報を開発者が受け取ることはありません。
-アプリは、料金を決めるために購入した日時と商品だけを端末の中に記録します。</p>
-
-<h2>通知とアラーム</h2>
-<p>通知とアラームは、端末の中で予約して鳴らします。外部のサーバーは使いません。</p>
-
-<h2>子どもの情報</h2>
-<p>YoruLock は誰の情報も集めないため、子どもの情報も集めません。</p>
-
-<h2>このポリシーの変更</h2>
-<p>内容を変えるときは、このページを更新し、上の日付を改めます。</p>
-
-<h2>お問い合わせ</h2>
-<p><a href="support.html">サポートのページ</a>をご覧ください。</p>
-</main>
+<div class="sky">
+  <header class="wrap nav">
+    <a class="brand" href="./"><img src="assets/icon.webp" alt="" width="34" height="34">YoruLock</a>
+    <nav class="links"><a href="support.html">サポート</a><a href="privacy.html" aria-current="page">プライバシー</a></nav>
+  </header>
+  <main class="narrow page-head">
+    <h1>何も、集めません。</h1>
+    <p>YoruLock に開発者のサーバーはなく、アプリは外部と通信しません。</p>
+  </main>
+</div>
+<section class="narrow">
+  <div class="zero">
+    <div><b>0</b><span>外部との通信</span></div>
+    <div><b>0</b><span>広告</span></div>
+    <div><b>0</b><span>解析ツール</span></div>
+    <div><b>0</b><span>トラッキング</span></div>
+  </div>
+  <div class="facts">
+    <div class="card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></svg><h3>端末の中だけ</h3><p>設定、記録、朝の課題に登録したバーコードの値は、あなたの iPhone の中だけに保存します。アプリを消すと消えます。料金を正しく出すための購入の記録の一部だけ、キーチェーンに残ります。</p></div>
+    <div class="card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v4l3 2"/><circle cx="12" cy="12" r="9"/></svg><h3>スクリーンタイム</h3><p>選んだアプリと利用時間は Apple の仕組みの中で扱います。アプリの外には出ません。</p></div>
+    <div class="card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><h3>カメラ</h3><p>朝の課題でバーコードを読むときだけ。写真は保存も送信もしません。</p></div>
+    <div class="card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 4a1.5 1.5 0 1 0 0 .01M9 21l2-6-3-3 2-5 4 3 3 1M11 15l3 2v4"/></svg><h3>モーション</h3><p>朝の課題で歩いたかを確かめるときだけ、端末の中で読みます。</p></div>
+    <div class="card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/></svg><h3>購入</h3><p>支払いは Apple が処理します。開発者は支払いの情報を受け取りません。料金を決めるため、購入の日時と商品だけを端末に記録します。</p></div>
+    <div class="card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 16V11a6 6 0 1 1 12 0v5l2 2H4zM10 21h4"/></svg><h3>通知とアラーム</h3><p>端末の中で予約して鳴らします。外部のサーバーは使いません。</p></div>
+  </div>
+  <p class="small">YoruLock は誰の情報も集めないため、子どもの情報も集めません。内容を変えるときはこのページを更新します。
+  お問い合わせは<a href="support.html">サポート</a>へ。<br>最終更新 2026年11月6日</p>
+</section>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Kagaritech</span>
+    <nav><a href="./">ホーム</a><a href="support.html">サポート</a><a href="privacy.html">プライバシー</a></nav>
+  </div>
+</footer>
 </body>
 </html>

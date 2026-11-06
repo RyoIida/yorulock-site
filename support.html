@@ -3,51 +3,41 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>YoruLock サポート</title>
-<style>
-  :root { --bg: #fbfaf7; --fg: #1d1c1a; --sub: #6b6862; --line: #e4e1da; }
-  @media (prefers-color-scheme: dark) { :root { --bg: #141312; --fg: #ece9e3; --sub: #a29e96; --line: #2c2a27; } }
-  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.8 -apple-system, "Hiragino Sans", sans-serif; }
-  main { max-width: 680px; margin: 0 auto; padding: 40px 16px 64px; }
-  h1 { font-size: 24px; margin: 0 0 4px; }
-  h2 { font-size: 17px; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
-  .sub { color: var(--sub); font-size: 14px; }
-  a { color: inherit; }
-</style>
+<title>YoruLock | サポート</title>
+<meta name="theme-color" content="#0a0e1c">
+<link rel="icon" href="assets/icon.webp">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-<h1>YoruLock サポート</h1>
-<p class="sub">夜のスマホに、鍵をかける。</p>
-
-<h2>お問い合わせ</h2>
-<p><a href="mailto:kagaritech@gmail.com">kagaritech@gmail.com</a></p>
-
-<h2>よくある質問</h2>
-
-<p><b>ロック中のアプリから YoruLock が開けません。</b><br>
-iOS の決まりで、ロック画面からアプリを直接開くことはできません。「一時解除したい」を押したあと、
-ホーム画面の YoruLock を開くと解除の画面が出ます。届いた通知をタップしても開けます。</p>
-
-<p><b>払ったのに解除されません。</b><br>
-通信が切れたり、承認待ち（承認と購入のリクエストなど）だったりした場合は、YoruLock を開き直すと、
-支払い済みの解除として反映されます。それでも反映されないときは、上の連絡先へお知らせください。</p>
-
-<p><b>払い戻しを受けたい。</b><br>
-購入は Apple が処理するため、払い戻しは Apple にお申し込みください（<a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a>）。</p>
-
-<p><b>アラームが鳴りません。</b><br>
-マナーモードでも鳴るアラームは iOS 26 以降で、アラームの許可が要ります。許可がないときや iOS 26 より前は、
-通知で代わりに知らせます（マナーモードでは鳴りません）。ホーム画面に赤い注意が出ているときはこの状態です。</p>
-
-<p><b>勝手に課金されることはありますか。</b><br>
-ありません。購入は毎回あなたが確認してからです。料金は購入の前に必ず表示します。</p>
-
-<p><b>ルールを変えたい・やめたい。</b><br>
-ロックしていない時間なら、設定からいつでも無料で変えたり止めたりできます。</p>
-
-<h2>プライバシー</h2>
-<p>YoruLock はあなたの情報を集めません。<a href="privacy.html">プライバシーポリシー</a></p>
-</main>
+<div class="sky">
+  <header class="wrap nav">
+    <a class="brand" href="./"><img src="assets/icon.webp" alt="" width="34" height="34">YoruLock</a>
+    <nav class="links"><a href="support.html" aria-current="page">サポート</a><a href="privacy.html">プライバシー</a></nav>
+  </header>
+  <main class="narrow page-head">
+    <h1>お困りですか。</h1>
+    <p>メールでお気軽にどうぞ。</p>
+    <a class="button" href="mailto:kagaritech@gmail.com">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+      kagaritech@gmail.com
+    </a>
+  </main>
+</div>
+<section class="narrow faq">
+  <h2>よくある質問</h2>
+  <details><summary>ロック画面から YoruLock が開けない</summary><p>iOS の決まりで、直接は開けません。「一時解除したい」を押してから YoruLock を開くと、解除の画面が出ます。</p></details>
+  <details><summary>払ったのに解除されない</summary><p>YoruLock を開き直すと反映されます。承認待ちの購入は、承認されたあとに反映されます。直らないときはメールでお知らせください。</p></details>
+  <details><summary>払い戻しをしたい</summary><p>購入は Apple が処理しています。<a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a> からお申し込みください。</p></details>
+  <details><summary>アラームが鳴らない</summary><p>マナーモードでも鳴るのは iOS 26 以降で、アラームの許可が要ります。それ以外は通知で知らせます（マナーモードでは鳴りません）。ホームの赤い注意がこの状態です。</p></details>
+  <details><summary>勝手に課金されますか</summary><p>されません。毎回、金額を見てから、あなたが確認します。</p></details>
+  <details><summary>ルールを変えたい・やめたい</summary><p>ロックしていない時間なら、設定からいつでも無料で変えられます。</p></details>
+</section>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Kagaritech</span>
+    <nav><a href="./">ホーム</a><a href="support.html">サポート</a><a href="privacy.html">プライバシー</a></nav>
+  </div>
+</footer>
 </body>
 </html>
